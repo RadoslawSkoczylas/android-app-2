@@ -14,7 +14,7 @@ public class DBProvider extends ContentProvider {
 
     private DBHelper dbHelper;
     private static final String IDENTIFIER = "com.example.db_mobile_phones.DBProvider";
-    public static final Uri uri = Uri.parse("content://"+IDENTIFIER+"/"+DBHelper.TABLE_NAME);
+    public static final Uri URI = Uri.parse("content://"+IDENTIFIER+"/"+DBHelper.TABLE_NAME);
     private static final int TABLE = 1;
     private static final int CHOSEN_ROW = 2;
     private static final UriMatcher URI_MATCHER = new UriMatcher(UriMatcher.NO_MATCH);
